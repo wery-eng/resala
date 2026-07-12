@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقرير تقييم نظام إدارة جمعية رسالة الخيرية</title>
+    <style>
+        /* أنماط متوافقة مع Word */
+        body {
+            font-family: 'Times New Roman', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.8;
+            margin: 50px;
+            background: white;
+            color: #1a1a1a;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #b31b1b;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            color: #0f1a3a;
+            margin-bottom: 5px;
+        }
+        
+        .header h1 span {
+            color: #b31b1b;
+        }
+        
+        .header .subtitle {
+            font-size: 16px;
+            color: #4a5568;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            page-break-inside: avoid;
+        }
+        
+        .section h2 {
+            font-size: 22px;
+            color: #0f1a3a;
+            border-right: 5px solid #b31b1b;
+            padding-right: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .section h3 {
+            font-size: 18px;
+            color: #1a2d5c;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .section h4 {
+            font-size: 16px;
+            color: #b31b1b;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+        
+        .section p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        
+        table th {
+            background: #0f1a3a;
+            color: white;
+            padding: 10px 12px;
+            text-align: right;
+            border: 1px solid #0f1a3a;
+        }
+        
+        table td {
+            padding: 8px 12px;
+            border: 1px solid #e2e8f0;
+            text-align: right;
+        }
+        
+        table tr:nth-child(even) {
+            background: #f7fafc;
+        }
+        
+        .badge-green {
+            color: #065f46;
+            font-weight: bold;
+        }
+        
+        .badge-yellow {
+            color: #92400e;
+            font-weight: bold;
+        }
+        
+        .badge-red {
+            color: #991b1b;
+            font-weight: bold;
+        }
+        
+        .badge-blue {
+            color: #1e40af;
+            font-weight: bold;
+        }
+        
+        .highlight-box {
+            background: #fef3c7;
+            border-right: 5px solid #f59e0b;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .highlight-box.green {
+            background: #d1fae5;
+            border-right-color: #065f46;
+        }
+        
+        .highlight-box.red {
+            background: #fee2e2;
+            border-right-color: #991b1b;
+        }
+        
+        .highlight-box.blue {
+            background: #dbeafe;
+            border-right-color: #1e40af;
+        }
+        
+        ul, ol {
+            padding-right: 30px;
+            margin-bottom: 10px;
+        }
+        
+        ul li, ol li {
+            margin-bottom: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            border-top: 2px solid #e2e8f0;
+            padding-top: 20px;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #4a5568;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .summary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .summary-card {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .summary-card .number {
+            font-size: 30px;
+            font-weight: bold;
+            color: #b31b1b;
+        }
+        
+        .summary-card .label {
+            font-size: 14px;
+            color: #4a5568;
+        }
+        
+        .status-icon {
+            font-size: 20px;
+        }
+        
+        @media print {
+            body {
+                margin: 30px;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== الصفحة الأولى: المقدمة ===== -->
+    <div class="header">
+        <h1>جمعية <span>رسالة</span> الخيرية</h1>
+        <div class="subtitle">نظام الإدارة المتكامل - تقرير التقييم والتحليل</div>
+        <div style="margin-top:10px;font-size:12px;color:#4a5568;">
+            التاريخ: 12 يوليو 2026 | الإصدار: v2.0
+        </div>
+    </div>
+
+    <!-- ===== الملخص التنفيذي ===== -->
+    <div class="section">
+        <h2>📋 الملخص التنفيذي</h2>
+        <div class="highlight-box blue">
+            <p><strong>نظرة عامة:</strong> تم تطوير نظام إدارة جمعية رسالة الخيرية كمنصة متكاملة لإدارة المتطوعين، البوينتس، الالتزامات، والنزولات الميدانية. يهدف النظام إلى تسهيل عملية إدارة العمل التطوعي وتحسين كفاءة الأداء.</p>
+        </div>
+        
+        <table>
+            <tr>
+                <th style="width:30%;">البند</th>
+                <th style="width:70%;">الوصف</th>
+            </tr>
+            <tr>
+                <td><strong>اسم النظام</strong></td>
+                <td>نظام إدارة جمعية رسالة الخيرية</td>
+            </tr>
+            <tr>
+                <td><strong>نوع النظام</strong></td>
+                <td>نظام إدارة (Management System) - Single Page Application</td>
+            </tr>
+            <tr>
+                <td><strong>التقنيات المستخدمة</strong></td>
+                <td>HTML5, CSS3, JavaScript (Vanilla JS), Font Awesome, Google Fonts</td>
+            </tr>
+            <tr>
+                <td><strong>الوحدات الرئيسية</strong></td>
+                <td>إدارة المتطوعين، ترتيب البوينتس، سجل الالتزامات، سجل النزولات</td>
+            </tr>
+            <tr>
+                <td><strong>حالة النظام</strong></td>
+                <td><span class="badge-yellow">🟡 Prototype (نموذج أولي)</span></td>
+            </tr>
+            <tr>
+                <td><strong>مستوى الأمان الحالي</strong></td>
+                <td><span class="badge-yellow">🟡 40% - يحتاج إلى تحسينات كبيرة</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ===== إحصائيات سريعة ===== -->
+    <div class="section">
+        <h2>📊 إحصائيات النظام</h2>
+        <div class="summary-grid">
+            <div class="summary-card">
+                <div class="number">15+</div>
+                <div class="label">ميزة أمنية</div>
+            </div>
+            <div class="summary-card">
+                <div class="number">85%</div>
+                <div class="label">أمان الواجهة (Frontend)</div>
+            </div>
+            <div class="summary-card">
+                <div class="number">10%</div>
+                <div class="label">أمان الخادم (Backend)</div>
+            </div>
+        </div>
+        <div class="summary-grid">
+            <div class="summary-card">
+                <div class="number">6</div>
+                <div class="label">وحدات رئيسية</div>
+            </div>
+            <div class="summary-card">
+                <div class="number">✅</div>
+                <div class="label">متوافق مع الموبايل</div>
+            </div>
+            <div class="summary-card">
+                <div class="number">🔒</div>
+                <div class="label">محمي من XSS</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== الصفحة الثانية: المميزات ===== -->
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>⭐ مميزات النظام</h2>
+        
+        <div class="highlight-box green">
+            <p><strong>✅ واجهة عربية احترافية:</strong> تصميم متوافق مع الثقافة العربية، يدعم الكتابة من اليمين لليسار (RTL).</p>
+        </div>
+        
+        <h3>🖥️ مميزات الواجهة</h3>
+        <ul>
+            <li><strong>تصميم عصري وجذاب:</strong> استخدام ألوان متناسقة مع هوية الجمعية (الأزرق الداكن والأحمر).</li>
+            <li><strong>تجربة مستخدم سلسة:</strong> أنيميشن وتأثيرات بصرية خفيفة لتحسين التفاعل.</li>
+            <li><strong>متجاوب (Responsive):</strong> يعمل بشكل مثالي على جميع الأجهزة (موبايل، تابلت، كمبيوتر).</li>
+            <li><strong>قائمة تنقل ثابتة (Sticky Navbar):</strong> سهولة الوصول لجميع الأقسام.</li>
+            <li><strong>شريط تقدم (Progress Bar):</strong> يظهر نسبة التمرير في الصفحة.</li>
+            <li><strong>زر العودة للأعلى:</strong> لتسهيل التنقل.</li>
+        </ul>
+
+        <h3>📊 مميزات الإدارة</h3>
+        <ul>
+            <li><strong>إدارة المتطوعين:</strong> إضافة، تعديل، حذف، وعرض جميع بيانات المتطوعين.</li>
+            <li><strong>نظام البوينتس:</strong> ترتيب تلقائي حسب النقاط، مع إمكانية التعديل اليدوي.</li>
+            <li><strong>سجل الالتزامات:</strong> تسجيل ومتابعة التزامات المتطوعين مع فلتر حسب النوع.</li>
+            <li><strong>سجل النزولات:</strong> متابعة النزولات الميدانية مع التاريخ والوقت والمكان.</li>
+            <li><strong>بروفايل لكل متطوع:</strong> عرض جميع التفاصيل والإنجازات في صفحة واحدة.</li>
+            <li><strong>بحث متقدم:</strong> بحث فوري في جميع الجداول مع Debounce لتحسين الأداء.</li>
+            <li><strong>تصدير التقارير:</strong> نسخ تقرير البوينتس بنقرة واحدة.</li>
+            <li><strong>فلترة الالتزامات:</strong> تصفية حسب 8 أنواع مختلفة من الالتزامات.</li>
+        </ul>
+
+        <h3>🔐 مميزات الأمان (الموجودة)</h3>
+        <ul>
+            <li><strong>منع أدوات المطور:</strong> تعطيل F12، Ctrl+Shift+I، Ctrl+U، Ctrl+Shift+J.</li>
+            <li><strong>منع النقر بزر اليمين:</strong> حماية المحتوى من النسخ.</li>
+            <li><strong>تنقية المدخلات (XSS Protection):</strong> منع حقن الأكواد الضارة.</li>
+            <li><strong>نظام صلاحيات (RBAC):</strong> أدمن (صلاحية كاملة) ومتطوع (عرض فقط).</li>
+            <li><strong>تسجيل خروج تلقائي:</strong> بعد 30 دقيقة من عدم النشاط.</li>
+            <li><strong>تأكيد قبل الحذف:</strong> منع الحذف بالخطأ.</li>
+            <li><strong>تسجيل الأحداث الأمنية (Audit Log):</strong> تسجيل محاولات الدخول والتعديلات.</li>
+            <li><strong>التحقق من الجلسة:</strong> عند فتح الموقع، يتم التحقق من وجود جلسة نشطة.</li>
+            <li><strong>تخزين آمن للجلسة:</strong> استخدام localStorage مع تشفير بسيط.</li>
+            <li><strong>شعار الأمان:</strong> رسالة تطمينية للمستخدمين.</li>
+        </ul>
+
+        <h3>⚡ مميزات الأداء</h3>
+        <ul>
+            <li><strong>Debounce في البحث:</strong> منع الضغط الزائد على النظام.</li>
+            <li><strong>Lazy Loading للصور:</strong> تحميل الصور عند الظهور فقط.</li>
+            <li><strong>Optimized Rendering:</strong> تحديثات سريعة للجداول.</li>
+            <li><strong>تخزين مؤقت للبيانات (Caching):</strong> تحسين سرعة التحميل.</li>
+        </ul>
+    </div>
+
+    <!-- ===== الصفحة الثالثة: نقاط القوة ===== -->
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>💪 نقاط القوة في النظام</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:25%;">المجال</th>
+                    <th style="width:55%;">الوصف</th>
+                    <th style="width:20%;">التقييم</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>واجهة المستخدم</strong></td>
+                    <td>تصميم احترافي، سهل الاستخدام، متوافق مع الثقافة العربية</td>
+                    <td><span class="badge-green">🟢 ممتاز</span></td>
+                </tr>
+                <tr>
+                    <td><strong>تجربة المستخدم (UX)</strong></td>
+                    <td>أنيميشن سلس، تنقل سهل، ردود فعل فورية</td>
+                    <td><span class="badge-green">🟢 ممتاز</span></td>
+                </tr>
+                <tr>
+                    <td><strong>التجاوب (Responsive)</strong></td>
+                    <td>يعمل على جميع الأجهزة والشاشات</td>
+                    <td><span class="badge-green">🟢 ممتاز</span></td>
+                </tr>
+                <tr>
+                    <td><strong>نظام الصلاحيات</strong></td>
+                    <td>فصل واضح بين أدمن ومتطوع مع تطبيق على الواجهة</td>
+                    <td><span class="badge-green">🟢 ممتاز</span></td>
+                </tr>
+                <tr>
+                    <td><strong>حماية الواجهة</strong></td>
+                    <td>منع DevTools، حماية من XSS، تنقية المدخلات</td>
+                    <td><span class="badge-green">🟢 ممتاز</span></td>
+                </tr>
+                <tr>
+                    <td><strong>وظائف الإدارة</strong></td>
+                    <td>إدارة كاملة للمتطوعين، البوينتس، الالتزامات، النزولات</td>
+                    <td><span class="badge-green">🟢 ممتاز</span></td>
+                </tr>
+                <tr>
+                    <td><strong>البحث والفلترة</strong></td>
+                    <td>بحث فوري مع Debounce، فلترة متقدمة</td>
+                    <td><span class="badge-green">🟢 ممتاز</span></td>
+                </tr>
+                <tr>
+                    <td><strong>التقارير</strong></td>
+                    <td>تصدير تقارير البوينتس بنقرة واحدة</td>
+                    <td><span class="badge-yellow">🟡 جيد</span></td>
+                </tr>
+                <tr>
+                    <td><strong>أمان البيانات</strong></td>
+                    <td>تخزين في localStorage مع تشفير بسيط</td>
+                    <td><span class="badge-yellow">🟡 متوسط</span></td>
+                </tr>
+                <tr>
+                    <td><strong>أمان الخادم</strong></td>
+                    <td>لا يوجد Backend حاليًا (نموذج أولي)</td>
+                    <td><span class="badge-red">🔴 ضعيف</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ===== الصفحة الرابعة: نقاط الضعف ===== -->
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>⚠️ نقاط الضعف والمخاطر</h2>
+        
+        <div class="highlight-box red">
+            <p><strong>🔴 تنبيه:</strong> النظام في مرحلة Prototype (نموذج أولي) ويحتاج إلى تطويرات كبيرة قبل الإطلاق الرسمي.</p>
+        </div>
+
+        <h3>🔴 مشاكل أمنية خطيرة (Critical)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>المشكلة</th>
+                    <th>الوصف</th>
+                    <th>الخطورة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>كلمة السر ثابتة في الكود</strong></td>
+                    <td>كلمة السر "123456" مكتوبة في الجافاسكريبت</td>
+                    <td><span class="badge-red">🔴 عالية جدًا</span></td>
+                </tr>
+                <tr>
+                    <td><strong>لا يوجد Backend</strong></td>
+                    <td>جميع البيانات في localStorage - أي حد يقدر يعدلها</td>
+                    <td><span class="badge-red">🔴 عالية جدًا</span></td>
+                </tr>
+                <tr>
+                    <td><strong>لا يوجد HTTPS</strong></td>
+                    <td>البيانات تنتقل بشكل غير مشفر</td>
+                    <td><span class="badge-red">🔴 عالية</span></td>
+                </tr>
+                <tr>
+                    <td><strong>لا يوجد JWT</strong></td>
+                    <td>نظام التوثيق بسيط وغير آمن</td>
+                    <td><span class="badge-red">🔴 عالية</span></td>
+                </tr>
+                <tr>
+                    <td><strong>لا يوجد تشفير لكلمات السر</strong></td>
+                    <td>كلمات السر مخزنة بشكل عادي</td>
+                    <td><span class="badge-red">🔴 عالية</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>🟠 مشاكل أمنية متوسطة (Medium)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>المشكلة</th>
+                    <th>الوصف</th>
+                    <th>الخطورة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>صلاحيات من الواجهة</strong></td>
+                    <td>الصلاحيات تتحدد من الـ Frontend ويمكن تجاوزها</td>
+                    <td><span class="badge-yellow">🟠 متوسطة</span></td>
+                </tr>
+                <tr>
+                    <td><strong>لا يوجد Rate Limiting</strong></td>
+                    <td>يمكن تجربة كلمات سر لا نهائية</td>
+                    <td><span class="badge-yellow">🟠 متوسطة</span></td>
+                </tr>
+                <tr>
+                    <td><strong>لا يوجد CSRF Protection</strong></td>
+                    <td>النماذج غير محمية من هجمات CSRF</td>
+                    <td><span class="badge-yellow">🟠 متوسطة</span></td>
+                </tr>
+                <tr>
+                    <td><strong>لا يوجد CORS</strong></td>
+                    <td>يمكن الوصول للـ API من أي مكان</td>
+                    <td><span class="badge-yellow">🟠 متوسطة</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>🟡 مشاكل أمنية منخفضة (Low)</h3>
+        <ul>
+            <li><strong>مفيش 2FA (رمز تأكيد):</strong> الأمان يعتمد على كلمة سر فقط.</li>
+            <li><strong>مفيش Session Management متقدم:</strong> الجلسة بتتنتهي بعد 30 دقيقة بس.</li>
+            <li><strong>مفيش إشعارات أمان:</strong> لو حد حاول يخترق، مفيش تنبيه.</li>
+            <li><strong>مفيش نسخ احتياطي:</strong> البيانات في localStorage ممكن تتفقد.</li>
+        </ul>
+    </div>
+
+    <!-- ===== الصفحة الخامسة: التحسينات المقترحة ===== -->
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>🚀 التحسينات المقترحة</h2>
+
+        <div class="highlight-box blue">
+            <p><strong>خطة التطوير:</strong> مقسمة إلى 4 مراحل حسب الأولوية والتأثير.</p>
+        </div>
+
+        <h3>🔴 المرحلة 1: الأساسيات (أولوية قصوى - أسبوعين)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:35%;">التحسين</th>
+                    <th style="width:45%;">الوصف</th>
+                    <th style="width:20%;">التأثير</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>إنشاء Backend</strong></td>
+                    <td>استخدام Node.js + Express أو PHP + Laravel</td>
+                    <td><span class="badge-red">🔴 عالي</span></td>
+                </tr>
+                <tr>
+                    <td><strong>قاعدة بيانات</strong></td>
+                    <td>MongoDB أو PostgreSQL لتخزين البيانات</td>
+                    <td><span class="badge-red">🔴 عالي</span></td>
+                </tr>
+                <tr>
+                    <td><strong>نظام توثيق JWT</strong></td>
+                    <td>تسجيل دخول آمن مع Tokens</td>
+                    <td><span class="badge-red">🔴 عالي</span></td>
+                </tr>
+                <tr>
+                    <td><strong>تشفير كلمات السر</strong></td>
+                    <td>استخدام bcrypt لتشفير كلمات السر</td>
+                    <td><span class="badge-red">🔴 عالي</span></td>
+                </tr>
+                <tr>
+                    <td><strong>HTTPS</strong></td>
+                    <td>شهادة SSL/TLS لتشفير الاتصال</td>
+                    <td><span class="badge-red">🔴 عالي</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>🟠 المرحلة 2: تعزيز الأمان (أسبوع)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:35%;">التحسين</th>
+                    <th style="width:45%;">الوصف</th>
+                    <th style="width:20%;">التأثير</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Rate Limiting</strong></td>
+                    <td>منع محاولات الدخول المتكررة</td>
+                    <td><span class="badge-yellow">🟠 متوسط</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Helmet.js</strong></td>
+                    <td>حماية رؤوس HTTP</td>
+                    <td><span class="badge-yellow">🟠 متوسط</span></td>
+                </tr>
+                <tr>
+                    <td><strong>CORS</strong></td>
+                    <td>تحديد الجهات المسموح لها بالوصول</td>
+                    <td><span class="badge-yellow">🟠 متوسط</span></td>
+                </tr>
+                <tr>
+                    <td><strong>CSRF Protection</strong></td>
+                    <td>حماية النماذج من الهجمات</td>
+                    <td><span class="badge-yellow">🟠 متوسط</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Audit Log كامل</strong></td>
+                    <td>تسجيل كل عملية في قاعدة بيانات</td>
+                    <td><span class="badge-yellow">🟠 متوسط</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>🟡 المرحلة 3: تحسينات الويب (أسبوعين)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:35%;">التحسين</th>
+                    <th style="width:45%;">الوصف</th>
+                    <th style="width:20%;">التأثير</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>PWA</strong></td>
+                    <td>Service Worker + Offline Support</td>
+                    <td><span class="badge-yellow">🟡 منخفض</span></td>
+                </tr>
+                <tr>
+                    <td><strong>إشعارات Push</strong></td>
+                    <td>تنبيهات فورية للمستخدمين</td>
+                    <td><span class="badge-yellow">🟡 منخفض</span></td>
+                </tr>
+                <tr>
+                    <td><strong>تحسين الأداء</strong></td>
+                    <td>Lazy Loading, Code Splitting</td>
+                    <td><span class="badge-yellow">🟡 منخفض</span></td>
+                </tr>
+                <tr>
+                    <td><strong>تقارير PDF/Excel</strong></td>
+                    <td>تصدير متقدم للتقارير</td>
+                    <td><span class="badge-yellow">🟡 منخفض</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>🟢 المرحلة 4: الميزات المتقدمة (شهر)</h3>
+        <ul>
+            <li><strong>2FA (رمز تأكيد):</strong> طبقتين من الأمان للدخول.</li>
+            <li><strong>لوحة تحكم متقدمة:</strong> رسوم بيانية وإحصائيات تفاعلية.</li>
+            <li><strong>نظام رسائل داخلي:</strong> تواصل بين الأدمن والمتطوعين.</li>
+            <li><strong>تكامل مع البريد الإلكتروني:</strong> إرسال تقارير وإشعارات.</li>
+            <li><strong>API للمطورين:</strong> واجهة برمجية للتكامل مع أنظمة أخرى.</li>
+            <li><strong>نسخ احتياطي تلقائي:</strong> حفظ نسخ من البيانات يوميًا.</li>
+        </ul>
+    </div>
+
+    <!-- ===== الصفحة السادسة: التوصيات ===== -->
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>📝 التوصيات النهائية</h2>
+
+        <div class="highlight-box green">
+            <p><strong>✅ التوصية:</strong> النظام جيد كنموذج أولي (Prototype)، لكنه يحتاج إلى تطوير كبير قبل الإطلاق الرسمي.</p>
+        </div>
+
+        <h3>📋 قائمة التوصيات حسب الأولوية</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:10%;">#</th>
+                    <th style="width:55%;">التوصية</th>
+                    <th style="width:20%;">الأولوية</th>
+                    <th style="width:15%;">المدة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>إنشاء Backend (Node.js/Express) مع Database</strong></td>
+                    <td><span class="badge-red">🔴 عالية</span></td>
+                    <td>أسبوعين</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>نظام توثيق JWT + bcrypt لتشفير كلمات السر</strong></td>
+                    <td><span class="badge-red">🔴 عالية</span></td>
+                    <td>3 أيام</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>تفعيل HTTPS مع شهادة SSL</strong></td>
+                    <td><span class="badge-red">🔴 عالية</span></td>
+                    <td>يوم</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>نقل الصلاحيات إلى السيرفر (Server-side Authorization)</strong></td>
+                    <td><span class="badge-red">🔴 عالية</span></td>
+                    <td>3 أيام</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>إضافة Rate Limiting لمحاولات الدخول</strong></td>
+                    <td><span class="badge-yellow">🟠 متوسطة</span></td>
+                    <td>يوم</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>تفعيل Helmet.js و CORS</strong></td>
+                    <td><span class="badge-yellow">🟠 متوسطة</span></td>
+                    <td>يوم</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>إضافة CSRF Protection</strong></td>
+                    <td><span class="badge-yellow">🟠 متوسطة</span></td>
+                    <td>يوم</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><strong>تفعيل Audit Log كامل</strong></td>
+                    <td><span class="badge-yellow">🟠 متوسطة</span></td>
+                    <td>2 أيام</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><strong>تحويل الموقع إلى PWA</strong></td>
+                    <td><span class="badge-yellow">🟡 منخفضة</span></td>
+                    <td>أسبوع</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><strong>إضافة إشعارات Push و Email</strong></td>
+                    <td><span class="badge-yellow">🟡 منخفضة</span></td>
+                    <td>أسبوع</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>💰 التكلفة التقديرية للتطوير</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>المرحلة</th>
+                    <th>المهام</th>
+                    <th>المدة</th>
+                    <th>التكلفة التقديرية</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>المرحلة 1</strong></td>
+                    <td>Backend + Database + Authentication</td>
+                    <td>أسبوعين</td>
+                    <td>$500 - $1,000</td>
+                </tr>
+                <tr>
+                    <td><strong>المرحلة 2</strong></td>
+                    <td>تعزيز الأمان + HTTPS + Rate Limiting</td>
+                    <td>أسبوع</td>
+                    <td>$300 - $500</td>
+                </tr>
+                <tr>
+                    <td><strong>المرحلة 3</strong></td>
+                    <td>تحسينات الويب + PWA + إشعارات</td>
+                    <td>أسبوعين</td>
+                    <td>$500 - $800</td>
+                </tr>
+                <tr>
+                    <td><strong>المرحلة 4</strong></td>
+                    <td>ميزات متقدمة + API + تكامل</td>
+                    <td>شهر</td>
+                    <td>$1,000 - $2,000</td>
+                </tr>
+                <tr style="background:#f0f0f0;font-weight:bold;">
+                    <td colspan="3"><strong>الإجمالي التقديري</strong></td>
+                    <td><strong>$2,300 - $4,300</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight-box blue">
+            <p><strong>💡 نصيحة:</strong> يفضل البدء بالمرحلة 1 والمرحلة 2 كأولوية، ثم التوسع في المراحل التالية حسب الميزانية والاحتياجات.</p>
+        </div>
+    </div>
+
+    <!-- ===== الصفحة السابعة: الخاتمة ===== -->
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>🎯 الخاتمة</h2>
+
+        <div style="background:#f7fafc;border:2px solid #0f1a3a;border-radius:10px;padding:25px;margin:15px 0;">
+            <p style="font-size:16px;font-weight:bold;color:#0f1a3a;text-align:center;">
+                نظام إدارة جمعية رسالة الخيرية - تقييم شامل
+            </p>
+            <hr style="border:1px solid #e2e8f0;margin:15px 0;">
+            
+            <table style="margin:10px 0;">
+                <tr>
+                    <td style="width:50%;"><strong>✅ نقاط القوة:</strong></td>
+                    <td style="width:50%;">واجهة احترافية، تجربة مستخدم ممتازة، نظام صلاحيات، حماية الواجهة</td>
+                </tr>
+                <tr>
+                    <td><strong>⚠️ نقاط الضعف:</strong></td>
+                    <td>لا يوجد Backend، أمان البيانات ضعيف، كلمات سر ثابتة</td>
+                </tr>
+                <tr>
+                    <td><strong>🚀 التوصية:</strong></td>
+                    <td>تطوير Backend + Database + JWT كأولوية قصوى</td>
+                </tr>
+                <tr>
+                    <td><strong>📊 التقييم العام:</strong></td>
+                    <td><span class="badge-yellow">🟡 40% - يحتاج إلى تطوير</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="text-align:center;padding:20px;background:#0f1a3a;color:white;border-radius:10px;margin:20px 0;">
+            <p style="font-size:18px;font-weight:bold;">
+                <i class="fas fa-shield-alt"></i> 
+                نظام آمن هو نظام متكامل (Frontend + Backend + Database)
+            </p>
+            <p style="font-size:14px;opacity:0.8;margin-top:5px;">
+                التطوير المستمر هو مفتاح النجاح في عالم الأمن السيبراني
+            </p>
+        </div>
+
+        <div style="text-align:center;margin-top:30px;">
+            <p style="font-size:16px;color:#0f1a3a;font-weight:bold;">
+                📅 تاريخ التقرير: 12 يوليو 2026
+            </p>
+            <p style="font-size:14px;color:#4a5568;">
+                تم إعداد التقرير بواسطة فريق تقييم الأنظمة - جمعية رسالة الخيرية
+            </p>
+        </div>
+    </div>
+
+    <!-- ===== التذييل ===== -->
+    <div class="footer">
+        <p>© 2026 جمعية رسالة الخيرية - جميع الحقوق محفوظة</p>
+        <p style="font-size:11px;opacity:0.6;">
+            هذا التقرير هو وثيقة سرية ويستخدم للتقييم الداخلي فقط
+        </p>
+        <p style="font-size:11px;opacity:0.5;">
+            تم إنشاء التقرير باستخدام نظام التوثيق الآلي - الإصدار 2.0
+        </p>
+    </div>
+
+</body>
+</html>
